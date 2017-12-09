@@ -1,0 +1,29 @@
+{
+  "name": "cookiecutter-rollup-es6-plus",
+  "version": "1.0.0",
+  "description": "A cookiecutter for authoring es6+ libraries",
+  "main": "index.js",
+  "dependencies": {
+    "buble": "^0.18.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.13.0",
+    "eslint-config-google": "^0.9.1",
+    "mocha": "^4.0.1",
+    "rollup": "^0.52.1",
+    "rollup-plugin-commonjs": "^8.2.6",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-replace": "^2.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "rollup",
+    "es6",
+    "es7",
+    "esnext"
+  ],
+  "author": "Steven Kalt",
+  "license": "MIT"
+}

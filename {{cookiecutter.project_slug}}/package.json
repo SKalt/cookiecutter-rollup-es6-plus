@@ -1,0 +1,26 @@
+{
+  "name": "{{cookiecutter.project_name}}",
+  "version": "{{cookiecutter.version}}",
+  "description": "{{cookiecutter.project_short_description}}",
+  "main": "dist/{{cookiecutter.project_slug}}.cjs.js",
+  "browser":"dist/{{cookiecutter.project_slug}}.umd.js",
+  "module": "dist/{{cookiecutter.project_name}}.esm.js",
+  "scripts": {
+    "pretest": "NODE_ENV=test rollup -c",
+    "test": "{{cookiecutter.test_command}}",
+    "build": "NODE_ENV=production rollup -c"
+  },
+  "keywords": [
+    {% ["{}".format(i) for i in cookiecutter.keywords.split(',')].join(',') %}
+  ],
+  "author": "{{cookiecutter.full_name}}",
+  "license": "{{cookiecutter.license}}",
+  "devDependencies": {
+    "eslint": "^4.13.0",
+    "eslint-config-google": "^0.9.1",
+    "rollup": "^0.52.1",
+    "rollup-plugin-commonjs": "^8.2.6",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-replace": "^2.0.0"
+  },
+}
