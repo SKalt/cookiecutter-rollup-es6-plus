@@ -3,7 +3,7 @@ cookiecutter-rollup-es6-plus
 
 A cookiecutter for authoring es6+ libraries with Rollup.js.  This cookiecutter
 doesn't provide a transpiler such as buble or babel for es6/7, since most notable features are now
-natively supported in the last two or three versions of the major browsers.
+natively supported in the last two or three versions of the major browsers and node.
 
 Installation
 ------------
@@ -17,7 +17,7 @@ bootstrap/
 ├── dist/
 ├── src/
 │   └── index.js
-├── test/
+├── tests/
 ├── .editorconfig
 ├── .eslintrc
 ├── .gitignore
