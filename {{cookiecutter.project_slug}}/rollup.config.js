@@ -7,7 +7,7 @@ console.log(process.env.NODE_ENV);
 export default [
 	// browser-friendly UMD build
 	{
-		input: 'src/main.js',
+		input: 'src/index.js',
 		output:{
       filename: pkg.browser
       format: 'umd',
@@ -21,7 +21,7 @@ export default [
 	},
 
 	{
-		entry: 'src/main.js',
+		entry: 'src/index.js',
 		external: ['ms'],
 		targets: [
 			{ dest: pkg.main, format: 'cjs' },
