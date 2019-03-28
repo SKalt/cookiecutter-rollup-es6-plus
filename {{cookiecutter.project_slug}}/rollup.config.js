@@ -10,7 +10,7 @@ export default [
 		input: 'src/main.js',
 		output:{
       filename: pkg.browser
-      format: 'umd'
+      format: 'umd',
     },
 		moduleName: pkg.name,
 		plugins: [
